@@ -1,0 +1,12 @@
+{
+    "mongodb": {
+        "connectionString": ""
+    },
+    "jwt": {
+        "secret" : ""
+    },
+    "mail-credentials" : {
+        "userid" :"",
+        "password" : ""
+    }
+}
