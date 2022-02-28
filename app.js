@@ -36,18 +36,13 @@ var trainee = require("./routes/trainee");
 var stopRegistration = require("./routes/stopRegistration");
 var results = require("./routes/results");
 var dummy = require("./routes/dummy");
-const cors = require("cors");
-const corsOptions = {
-  origin: "*",
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
-};
+
 //configs
 app.use(express.static(path.join(__dirname, "public")));
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors(corsOptions));
+
 //passport
 app.use(passport.initialize());
 app.use(passport.session());
