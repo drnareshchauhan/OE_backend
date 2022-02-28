@@ -2,6 +2,7 @@ let UserModel = require("../models/user");
 var passport = require("../services/passportconf");
 var jwt = require("jsonwebtoken");
 var config = require("config");
+require("dotenv").config();
 
 let userlogin = (req, res, next) => {
   req.check("emailid", ` Invalid email address`).isEmail().notEmpty();
@@ -26,7 +27,7 @@ let userlogin = (req, res, next) => {
             });
           }
 
-          var token = jwt.sign({ _id: user._id }, config.get("jwt.secret"), {
+          var token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET, {
             expiresIn: 5000000,
           });
           res.json({
