@@ -59,7 +59,7 @@ let traineeenter = (req, res, next) => {
                     emailid,
                     "Registered Successfully",
                     `You have been successfully registered for the test. Click on the link given to take test  "${
-                      req.protocol + "://" + req.get("psmexam.vercel.app")
+                      req.protocol + "://" + "psmexam.vercel.app"
                     }/trainee/taketest?testid=${testid}&traineeid=${u._id}"`
                   )
                     .then((dd) => {
