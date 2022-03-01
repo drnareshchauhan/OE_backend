@@ -10,8 +10,8 @@ var createadmin = () => {
       var tempdata = new UserModel({
         name: "naresh",
         password: hash,
-        emailid: "drnareshchauhan@rediffmail.com",
-        contact: "8160395020",
+        emailid: "drnareshchauhan@gmail.com",
+        contact: "9904266004",
         type: "ADMIN",
       });
       tempdata
