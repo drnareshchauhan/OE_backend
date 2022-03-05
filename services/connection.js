@@ -5,21 +5,26 @@ let tool = require("./tool");
 
 //database connection
 mongoose.Promise = global.Promise;
-const options = {
-  autoIndex: false,
-  reconnectTries: 100,
-  reconnectInterval: 500,
-  poolSize: 10,
-  bufferMaxEntries: 0,
-  useNewUrlParser: true,
-  useFindAndModify: false,
-};
+// const options = {
+//   autoIndex: false,
+//   reconnectTries: 100,
+//   reconnectInterval: 500,
+//   poolSize: 10,
+//   bufferMaxEntries: 0,
+//   useNewUrlParser: true,
+//   useFindAndModify: false,
+// };
 
 mongoose
   .connect(process.env.dbURI, {
+    autoIndex: false,
+    reconnectTries: 100,
+    reconnectInterval: 500,
+    poolSize: 10,
+    bufferMaxEntries: 0,
     useNewUrlParser: true,
-    useCreateIndex: true,
     useFindAndModify: false,
+    useCreateIndex: true,
     useUnifiedTopology: true,
   })
   .then(() => {
