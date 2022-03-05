@@ -1,64 +1,61 @@
 var mongoose = require("mongoose");
 var UserModel = require("../models/user");
 
-
-var questionschema = new mongoose.Schema({
-     body : {
-        required : true ,
-        type : String
+var questionschema = new mongoose.Schema(
+  {
+    body: {
+      required: true,
+      type: String,
     },
-    weightage :{
-        required : true,
-        type : Number,
-        default : 1
-
+    weightage: {
+      required: true,
+      type: Number,
+      default: 1,
     },
-    anscount : {
-        required : true,
-        type : Number,
-        default : 1
-
+    anscount: {
+      required: true,
+      type: Number,
+      default: 1,
     },
-    options : [{
+    options: [
+      {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Options',
-        required : true
-    }],
-    explanation : {
-        type : String,
-        required : true
+        ref: "Options",
+        required: true,
+      },
+    ],
+    explanation: {
+      type: String,
+      required: true,
     },
-    subject:{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'SubjectModel',
-        required : true
+    subject: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "SubjectModel",
+      required: true,
     },
-    quesimg: { 
-        required : false,
-        default : null,
-        type : String
+    quesimg: {
+      data: Buffer,
+      required: false,
+      default: null,
+      type: String,
     },
-    difficulty:{
-        required : true,
-        default : 0,
-        type : Number
+    difficulty: {
+      required: true,
+      default: 0,
+      type: Number,
     },
-    createdBy:{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'UserModel'
+    createdBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "UserModel",
     },
-    status:{
-        type: Boolean,
-        default : 1,
-        required : true
-    }
-},
+    status: {
+      type: Boolean,
+      default: 1,
+      required: true,
+    },
+  },
 
-    { timestamps: {}}
+  { timestamps: {} }
+);
 
-    );
-
-    module.exports = questionschema;
-
-
-
+module.exports = questionschema;
