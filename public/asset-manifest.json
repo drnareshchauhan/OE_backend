@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "http://localhost:3000/static/css/main.9f35de4a.chunk.css",
-    "main.js": "http://localhost:3000/static/js/main.661e5f58.chunk.js",
-    "main.js.map": "http://localhost:3000/static/js/main.661e5f58.chunk.js.map",
-    "runtime~main.js": "http://localhost:3000/static/js/runtime~main.8a6cbfe7.js",
-    "runtime~main.js.map": "http://localhost:3000/static/js/runtime~main.8a6cbfe7.js.map",
-    "static/css/2.46439c26.chunk.css": "http://localhost:3000/static/css/2.46439c26.chunk.css",
-    "static/js/2.89e90205.chunk.js": "http://localhost:3000/static/js/2.89e90205.chunk.js",
-    "static/js/2.89e90205.chunk.js.map": "http://localhost:3000/static/js/2.89e90205.chunk.js.map",
-    "index.html": "http://localhost:3000/index.html",
-    "precache-manifest.a8f7087a6618214a5c423813b5d60a46.js": "http://localhost:3000/precache-manifest.a8f7087a6618214a5c423813b5d60a46.js",
-    "service-worker.js": "http://localhost:3000/service-worker.js",
-    "static/css/2.46439c26.chunk.css.map": "http://localhost:3000/static/css/2.46439c26.chunk.css.map",
-    "static/css/main.9f35de4a.chunk.css.map": "http://localhost:3000/static/css/main.9f35de4a.chunk.css.map",
-    "static/media/homepage.jpeg": "http://localhost:3000/static/media/homepage.4401e82d.jpeg"
+    "main.css": "/static/css/main.9f35de4a.chunk.css",
+    "main.js": "/static/js/main.32165d5a.chunk.js",
+    "main.js.map": "/static/js/main.32165d5a.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.46439c26.chunk.css": "/static/css/2.46439c26.chunk.css",
+    "static/js/2.48f484e3.chunk.js": "/static/js/2.48f484e3.chunk.js",
+    "static/js/2.48f484e3.chunk.js.map": "/static/js/2.48f484e3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a7fd348e5186885bb89233559f566ea8.js": "/precache-manifest.a7fd348e5186885bb89233559f566ea8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.46439c26.chunk.css.map": "/static/css/2.46439c26.chunk.css.map",
+    "static/css/main.9f35de4a.chunk.css.map": "/static/css/main.9f35de4a.chunk.css.map",
+    "static/media/homepage.jpeg": "/static/media/homepage.4401e82d.jpeg"
   }
 }
