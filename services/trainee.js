@@ -55,20 +55,20 @@ let traineeenter = (req, res, next) => {
               tempdata
                 .save()
                 .then((u) => {
-                  sendmail(
-                    emailid,
-                    "Registered Successfully",
-                    `You have been successfully registered for the test. Click on the link given to take test  "${
-                      req.protocol + "://" + "psmexam.vercel.app"
-                    }/trainee/taketest?testid=${testid}&traineeid=${u._id}"`
-                  )
-                    //   sendmail(
-                    //     emailid,
-                    //     "Registered Successfully",
-                    //     `You have been successfully registered for the test. Click on the link given to take test  "${
-                    //       req.protocol + "://" +req.get("host")
-                    //     }/trainee/taketest?testid=${testid}&traineeid=${u._id}"`
-                    //   )
+                  // sendmail(
+                  //   emailid,
+                  //   "Registered Successfully",
+                  //   `You have been successfully registered for the test. Click on the link given to take test  "${
+                  //     req.protocol + "://" + "psmexam.vercel.app"
+                  //   }/trainee/taketest?testid=${testid}&traineeid=${u._id}"`
+                  // )
+                      sendmail(
+                        emailid,
+                        "Registered Successfully",
+                        `You have been successfully registered for the test. Click on the link given to take test  "${
+                          req.protocol + "://" +req.get("host")
+                        }/trainee/taketest?testid=${testid}&traineeid=${u._id}"`
+                      )
                     .then((dd) => {
                       console.log(dd);
                     })
